@@ -21,6 +21,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.1",
+    "rss": "^1.2.2",
     "storybook": "^6.5.15",
     "web-vitals": "^2.1.4"
   },
@@ -47,6 +48,7 @@
     "@storybook/preset-create-react-app": "^4.1.2",
     "@storybook/react": "^6.5.15",
     "@storybook/testing-library": "^0.0.13",
+    "@types/rss": "^0.0.29",
     "babel-plugin-named-exports-order": "^0.0.2",
     "prop-types": "^15.8.1",
     "webpack": "^5.75.0"
