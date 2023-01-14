@@ -6,7 +6,7 @@ var request = require('request');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var data = [];
-  var feed = request('https://liginc.co.jp/feed/')
+  var feed = request('https://oreno-erohon.com/feed')
   var feedparser = new FeedParser();
 
   feed.on('error', function (error) {
@@ -32,7 +32,8 @@ router.get('/', function(req, res, next) {
     while (item = this.read()) {
       data.push({
         'title': item.title,
-        'url': item.link
+        'url': item.link,
+        'img': item.image
       });
     }
   });
