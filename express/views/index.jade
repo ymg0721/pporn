@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  //- 下記を追記
+  each item in data
+    h2
+      a(href="#{item.url}", target="_blank") #{item.title}
