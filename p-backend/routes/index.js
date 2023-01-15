@@ -1,7 +1,7 @@
-var express = require('express');
-var router = express.Router();
-var FeedParser = require('feedparser');
-var request = require('request');
+const express = require('express');
+const router = express();
+const FeedParser = require('feedparser');
+const request = require('request');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -32,8 +32,7 @@ router.get('/', function(req, res, next) {
     while (item = this.read()) {
       data.push({
         'title': item.title,
-        'url': item.link,
-        'img': item.image
+        'url': item.link
       });
     }
   });
@@ -43,6 +42,10 @@ router.get('/', function(req, res, next) {
   });
 
   // res.render('index', { title: 'Express' }); //今回は使わないのでコメントアウト
+});
+
+router.get("/hellow", (req, res) => {
+  res.json({ message: "Hello World!" });
 });
 
 module.exports = router;
