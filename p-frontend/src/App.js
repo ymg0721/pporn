@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import { GetServerSidePropsContext } from 'next'
+import { generateFeed } from '@/libs/api/feed'
 
 function App() {
   return (
