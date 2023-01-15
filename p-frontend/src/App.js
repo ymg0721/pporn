@@ -6,7 +6,7 @@ function App() {
   useEffect(() =>{
     fetch('/hellow')
       .then((res) => res.json())
-      .then((data) => setMessage(data.message));
+      .then((data) => setMessage(data.title));
   },[])
   return (
     <div className="App">

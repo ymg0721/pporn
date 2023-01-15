@@ -45,7 +45,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get("/hellow", (req, res) => {
-  res.json({ message: "Hello World!" });
+  res.json({ title: "Hello World!" });
 });
 
 module.exports = router;
