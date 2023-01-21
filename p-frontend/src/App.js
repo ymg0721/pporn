@@ -13,8 +13,8 @@ function App() {
       <h1>フロントエンド</h1>
       <ul>
         {
-          message.map((post) => 
-            <li>{post.title}</li>
+          message.map((data) => 
+            <a href={data.url}>{data.title}</a>
           )
         }
       </ul>
