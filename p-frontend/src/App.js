@@ -11,13 +11,13 @@ function App() {
   return (
     <div className="App">
       <h1>フロントエンド</h1>
-      <ul>
+      <p>
         {
           message.map((data) => 
             <a href={data.url}>{data.title}</a>
           )
         }
-      </ul>
+      </p>
     </div>
   );
 }
