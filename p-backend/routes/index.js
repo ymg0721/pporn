@@ -4,7 +4,7 @@ const FeedParser = require('feedparser');
 const request = require('request');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/hellow', function(req, res, next) {
   var data = [];
   var feed = request('https://oreno-erohon.com/feed')
   var feedparser = new FeedParser();
@@ -38,14 +38,15 @@ router.get('/', function(req, res, next) {
   });
 
   feedparser.on('end', function () {
-    res.render('index', { title: 'LIG Feed', data: data});
+    res.json({ title: 'LIG Feed', data: data});
+    // res.render('index',{data:data});
   });
 
   // res.render('index', { title: 'Express' }); //今回は使わないのでコメントアウト
 });
 
-router.get("/hellow", (req, res) => {
-  res.json({ title: "Hello World!" });
-});
+// router.get("/hellow", (req, res) => {
+//   res.json({ title: "Hello World!" });
+// });
 
 module.exports = router;
