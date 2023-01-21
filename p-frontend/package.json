@@ -20,6 +20,7 @@
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
+    "axios": "^1.2.3",
     "feedparser": "^2.2.10",
     "libs": "^0.1.2",
     "next": "^13.1.2",
