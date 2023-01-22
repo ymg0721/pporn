@@ -11,12 +11,14 @@ function App() {
   return (
     <div className="App">
       <h1>フロントエンド</h1>
-      <p>
+      <p className='pHead'>
         {
           message.map((data) => 
-            <a href={data.url}>{data.title}</a>
-          )
-        }
+          <div>
+            {/* <div>{description}</div> */}
+            <p className='pSub'><a href={data.url}>{data.title}</a></p>
+          </div>)
+        }<br/>
       </p>
     </div>
   );

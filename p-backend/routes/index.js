@@ -32,7 +32,8 @@ router.get('/hellow', function(req, res, next) {
     while (item = this.read()) {
       data.push({
         'title': item.title,
-        'url': item.link
+        'url': item.link,
+        'description':item.description,
       });
     }
   });
